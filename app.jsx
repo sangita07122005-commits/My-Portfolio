@@ -91,8 +91,8 @@ function Skills() {
   return (
     <Section id="skills" title="Skills">
       <dl className="grid gap-x-10 gap-y-4 sm:grid-cols-2">
-        {skills.map(([k, v]) => (
-          <div key={k}><dt className="font-bold">{k}</dt><dd className="text-muted">{v}</dd></div>
+        {skills.map(([k, v, link]) => (
+          <div key={k}><dt className="font-bold">{k}</dt><dd className="text-muted">{v}{link && <> <a href={link} className="whitespace-nowrap text-accent underline">View certificate</a></>}</dd></div>
         ))}
       </dl>
     </Section>

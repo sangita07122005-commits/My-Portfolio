@@ -22,8 +22,8 @@ const skills = [
   ["Frontend", "HTML, CSS, Tailwind CSS, JavaScript, React"],
   ["Programming", "Java"],
   ["Tools", "Git, GitHub, VS Code"],
-  ["Infosys Springboard", "Internship 7.0 (B1), Intelligent Farm Operations Platform with Smart Agro Precision System. Certificate of completion, Jun 28 – Aug 30, 2026"],
-  ["Certification", "Programming in Java, NPTEL (IIT Kharagpur), Elite grade, 91%, Jan–Apr 2026"],
+  ["Infosys Springboard", "Internship 7.0 (B1), Intelligent Farm Operations Platform with Smart Agro Precision System. Certificate of completion, Jun 28 – Aug 30, 2026", "infosys-certificate.pdf"],
+  ["Certification", "Programming in Java, NPTEL (IIT Kharagpur), Elite grade, 91%, Jan–Apr 2026", "nptel-java-certificate.pdf"],
   ["Languages", "Bengali, English, Hindi"],
 ];
 
