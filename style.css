@@ -1,0 +1,15 @@
+/* Custom CSS (Tailwind handles the rest) */
+:root{--bg:#EEF1F8;--surface:#FAFBFE;--ink:#16203A;--muted:#52607F;--line:#CBD3E6;--accent:#A9650F;--leaf:#3F7A55}
+.dark{--bg:#131A2E;--surface:#1B2542;--ink:#F3EEE3;--muted:#A9B3CC;--line:#2B375A;--accent:#E8A33D;--leaf:#7CC795}
+html{scroll-behavior:smooth}
+
+/* Hero illustration: clouds and sun float gently */
+.float-a{animation:float 6s ease-in-out infinite alternate}
+.float-b{animation:float 7.5s ease-in-out -2s infinite alternate}
+.float-c{animation:float 5s ease-in-out -1s infinite alternate}
+@keyframes float{from{transform:translateY(0)}to{transform:translateY(-10px)}}
+
+@media (prefers-reduced-motion:reduce){
+  .float-a,.float-b,.float-c{animation:none}
+  html{scroll-behavior:auto}
+}

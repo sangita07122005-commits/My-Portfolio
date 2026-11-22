@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sangita Das – Frontend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: { extend: {
+      colors: { bg:"var(--bg)", surface:"var(--surface)", ink:"var(--ink)", muted:"var(--muted)", line:"var(--line)", accent:"var(--accent)", leaf:"var(--leaf)" },
+      fontFamily: { serif:['Fraunces','Georgia','serif'], sans:['"DM Sans"','system-ui','sans-serif'] }
+    } }
+  };
+</script>
+
+<!-- Our own CSS -->
+<link rel="stylesheet" href="style.css">
+
+
+<!-- React + Babel (JSX) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.26.4/babel.min.js"></script>
+</head>
+
+<body class="bg-bg text-ink font-sans text-[17px] leading-relaxed">
+<div id="root"></div>
+
+<!-- 1. Your content (plain JS) -->
+<script src="data.js"></script>
+<!-- 2. React app (JSX) -->
+<script type="text/babel" src="app.jsx"></script>
+</body>
+</html>
